@@ -64,4 +64,12 @@ timeBlocks.each(function () {
     $("#16").val(JSON.parse(localStorage.getItem('4')));
     $("#17").val(JSON.parse(localStorage.getItem('5')));
 
+    // a button for clearing event text inside input boxes
+    clearButton.on("click", function () {
+        localStorage.clear();
+        confirmationMsg.text('Events cleared from local storage❌');
+        confirmationMsg.css('display', 'block');
+        timeBlocks.val("");
+    })
+
 });
