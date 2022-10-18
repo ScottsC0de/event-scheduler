@@ -13,7 +13,7 @@ Upon clicking the link to the webpage (see "Links" below), the user will be dire
 
 ## Links
 
-Website URL: 
+Website URL: https://scottsc0de.github.io/event-scheduler/
 
 GitHub Repo: https://github.com/ScottsC0de/event-scheduler
 
