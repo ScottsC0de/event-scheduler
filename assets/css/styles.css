@@ -61,22 +61,22 @@ label {
     color: black;
 }
 
-.past::placeholder {
-    color: #fff;
-}
-
 .present {
     background-color: #ff6961;
     color: black;
 }
 
 .present::placeholder {
-    color: rgb(222, 222, 222);
+    color: rgb(246, 246, 246);
 }
 
 .future {
     background-color: #77dd77;
     color: black;
+}
+
+.future::placeholder {
+    color: rgb(130, 130, 130);
 }
 
 .saveBtn {
