@@ -48,7 +48,7 @@ $(function () {
             confirmationMsg.text("Event saved to local storage✅");
             confirmationMsg.css('display', 'block');
         } else {
-            confirmationMsg.text("Please enter an event!");
+            confirmationMsg.text("Please enter an event❌");
             confirmationMsg.css('display', 'block');
         }
     });
