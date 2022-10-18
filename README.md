@@ -20,3 +20,5 @@ GitHub Repo: https://github.com/ScottsC0de/event-scheduler
 ## Video 
 
 ## Screenshot
+
+![alt text](assets/img/site-pic.png)
