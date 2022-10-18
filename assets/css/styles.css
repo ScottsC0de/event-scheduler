@@ -99,3 +99,8 @@ label {
     height: 75px;
     align-self: center;
 }
+
+#clearBtn:hover {
+    font-size: 19px;
+    transition: all .4s ease-in-out;
+}
