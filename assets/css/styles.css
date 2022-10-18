@@ -32,7 +32,6 @@ label {
 }
 
 .time-block {
-    /* text-align: center; */
     border-radius: 15px;
     width: 2000px;
     background-color: white;
@@ -45,6 +44,7 @@ label {
     padding: 0 10px;
 }
 
+/* timeblock animation */
 .time-block:focus {
     height: 60px;
     font-size: 16px;
@@ -79,6 +79,7 @@ label {
     margin-left: 30px;
 }
 
+/* button animation */
 .saveBtn:hover {
     font-size: 19px;
     transition: all .4s ease-in-out;
