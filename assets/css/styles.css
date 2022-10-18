@@ -61,9 +61,17 @@ label {
     color: black;
 }
 
+.past::placeholder {
+    color: #fff;
+}
+
 .present {
     background-color: #ff6961;
     color: black;
+}
+
+.present::placeholder {
+    color: #fff;
 }
 
 .future {
