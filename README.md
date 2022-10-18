@@ -17,7 +17,13 @@ Website URL:
 
 GitHub Repo: https://github.com/ScottsC0de/event-scheduler
 
-## Video 
+## Video
+
+
+
+https://user-images.githubusercontent.com/56902166/196488080-507feb4a-8d85-4821-8a2c-1d4a0cd2be44.mov
+
+
 
 ## Screenshot
 
