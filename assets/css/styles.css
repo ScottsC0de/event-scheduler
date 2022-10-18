@@ -71,7 +71,7 @@ label {
 }
 
 .present::placeholder {
-    color: #fff;
+    color: rgb(222, 222, 222);
 }
 
 .future {
