@@ -4,12 +4,7 @@ body {
     line-height: 1;
 }
 
-textarea {
-    background: transparent;
-    border: none;
-    resize: none;
-    color: #000000;
-    border-left: 1px solid black;
+label {
     padding: 10px;
 }
 
@@ -19,22 +14,34 @@ textarea {
     color: black;
     border-radius: 0;
     border-bottom: 10px solid black;
+    /* delete some of that whitespace at the bottom of header */
+    height: 270px;
 }
 
-.description {
-    white-space: pre-wrap;
+.timeblock-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
 }
 
 .time-block {
-    text-align: center;
+    /* text-align: center; */
     border-radius: 15px;
+    width: 2000px;
+    background-color: white;
+    color: maroon;
+    border: black solid 1px;
+    height: 100px;
+    transition: height 1s;
+    -webkit-transition: height 1s;
+    /* move cursor in input box to the right a tad */
+    padding: 0 10px;
 }
 
-.row {
-    white-space: pre-wrap;
-    height: 80px;
-    border-top: 1px solid white;
-    ;
+.time-block:focus {
+    height: 60px;
+    font-size: 16px;
 }
 
 .hour {
@@ -45,28 +52,44 @@ textarea {
 
 .past {
     background-color: #d3d3d3;
-    color: white;
+    color: black;
 }
 
 .present {
     background-color: #ff6961;
-    color: white;
+    color: black;
 }
 
 .future {
     background-color: #77dd77;
-    color: white;
+    color: black;
 }
 
 .saveBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 10px;
     background-color: #06AED5;
     color: white;
+    width: 300px;
+    margin-left: 30px;
 }
 
-.saveBtn i:hover {
-    font-size: 20px;
-    transition: all .3s ease-in-out;
+.saveBtn:hover {
+    font-size: 19px;
+    transition: all .4s ease-in-out;
+}
+
+#confirmation {
+    text-align: center;
+    display: none;
+}
+
+#clearBtn {
+    margin-left: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background-color: #06AED5;
+    color: white;
+    width: 200px;
+    height: 75px;
+    align-self: center;
 }
