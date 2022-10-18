@@ -50,4 +50,18 @@ timeBlocks.each(function () {
             confirmationMsg.css('display', 'block');
         }
     });
+
+    // user input stays in box after refresh
+    // grabbing each time block seperately by their local storage key 
+    // and displaying their local storage value to the input box
+    $("#9").val(JSON.parse(localStorage.getItem('9')));
+    $("#10").val(JSON.parse(localStorage.getItem('10')));
+    $("#11").val(JSON.parse(localStorage.getItem('11')));
+    $("#12").val(JSON.parse(localStorage.getItem('12')));
+    $("#13").val(JSON.parse(localStorage.getItem('1')));
+    $("#14").val(JSON.parse(localStorage.getItem('2')));
+    $("#15").val(JSON.parse(localStorage.getItem('3')));
+    $("#16").val(JSON.parse(localStorage.getItem('4')));
+    $("#17").val(JSON.parse(localStorage.getItem('5')));
+
 });
