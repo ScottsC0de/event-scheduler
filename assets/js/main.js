@@ -1,19 +1,17 @@
-// target HTML elements using jQuery
+// targetting HTML elements using jQuery
 var timeBlocks = $(".time-block");
 var saveEvents = $(".saveBtn");
 var confirmationMsg = $("#confirmation");
 var clearButton = $("#clearBtn");
 
-// runs as soon as the DOM is ready
-// same as $(document).ready
+// same as $(document).ready, runs as soon as the DOM is ready
 $(function () {
     // date and current time up top
-    // will need to reference this for time block color
     var currentDateAndTime = moment();
     $("#currentDay").text(currentDateAndTime.format("dddd MMM Do, YYYY h:mma"));
 
-    // function for changing time block color based on current hour
-    // .each() the shortened forEach()
+    /* function for changing time block color based on current hour
+       .each() the shortened forEach() */
     timeBlocks.each(function () {
         var currentBlock = $(this); // $(this) refers to each timeBlock seperately
         var currentBlockHour = parseInt(currentBlock.attr("name")); // parsing the "name" attribute of each block, numbers used to compare to current hour
@@ -38,8 +36,8 @@ $(function () {
         }
     });
 
-    // clicking save event button adds to local storage and shows confirmation message
-    // .on() the shortened addEventListener "onclick"
+    /* clicking save event button adds to local storage and shows confirmation message
+       .on() the shortened addEventListener "onclick" */
     saveEvents.on("click", function () {
         // .siblings(), targetting the save buttons sibling elements
         var timeBlockInput = $(this).siblings(".time-block")
@@ -56,8 +54,8 @@ $(function () {
     });
 
     // user input stays in box after refresh
-    // grabbing each time block seperately by their local storage key 
-    // and displaying their local storage value to the input box
+    /* grabbing each time block seperately by their local storage key 
+       and displaying their local storage value to the input box */
     $("#9").val(JSON.parse(localStorage.getItem('9')));
     $("#10").val(JSON.parse(localStorage.getItem('10')));
     $("#11").val(JSON.parse(localStorage.getItem('11')));
@@ -71,7 +69,7 @@ $(function () {
     // a button for clearing event text inside input boxes
     clearButton.on("click", function () {
         localStorage.clear();
-        confirmationMsg.text('Events cleared from local storage❌');
+        confirmationMsg.text('Events cleared from local storage✅');
         confirmationMsg.css('display', 'block');
         timeBlocks.val("");
     })
